@@ -45,7 +45,7 @@ Compared across:
 
 ## Mlflow Tracking
 
-- Integrated MLflow for experiment tracking, logging model parameters, evaluation metrics, and ensuring reproducible training runs.
+- MLflow is used for experiment tracking (`file:///C:/mlruns`) under the experiment `movie_recommender_system`, logging model hyperparameters, training statistics, evaluation metrics (Precision@K, Recall@K, NDCG@K, Hit Rate@K), user segmentation results, and the trained XGBoost ranking model along with evaluation artifacts.
 
 ## ⚙️ Tech Stack
 
