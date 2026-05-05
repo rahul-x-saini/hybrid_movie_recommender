@@ -17,7 +17,7 @@ class ContentRecommender:
         self.tfidf_matrix = self.tfidf.fit_transform(self.movies['content'])
         self.cosine_sim = cosine_similarity(self.tfidf_matrix, self.tfidf_matrix)
 
-    def recommend(self, favorite_title, top_n=50):
+    def recommend(self, favorite_title, top_n=100):
         if self.cosine_sim is None:
             raise Exception("Run prepare_matrix() first")
 

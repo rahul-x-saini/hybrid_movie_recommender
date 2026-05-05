@@ -159,7 +159,6 @@ def train_ranker():
         mlflow.log_metric("hit_rate_at_k_ranking", results["HitRate@K"]["Ranking"])
         
 
-
         # ---------------- Save + Log Results ----------------
 
         file_path = save_results_csv(results)

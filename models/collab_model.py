@@ -51,7 +51,7 @@ class MatrixFactorization:
 
             print(f"Epoch {epoch+1}/{self.epochs}, Loss: {total_loss:.2f}")
 
-    def recommend(self, user_id, top_n=50):
+    def recommend(self, user_id, top_n=100):
         if user_id not in self.user_map:
             return []
 

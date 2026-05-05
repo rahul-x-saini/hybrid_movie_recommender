@@ -72,4 +72,3 @@ def recommend(user_id, favorite_movie, ranker, hybrid_gen, ratings):
 
     
     return candidates[["movieId", "title", "genres"]].head(10)
-
