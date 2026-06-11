@@ -1,0 +1,42 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Ignore all data files except required runtime CSVs
+data/**
+!data/
+!data/train.csv
+!data/movies.csv
+
+# Training / evaluation
+evaluation/
+results/
+eda.py
+data_split.py
+main.py
+
+# Training scripts
+pipeline/save_models.py
+pipeline/save_results.py
+pipeline/train_ranker.py
+
+# Optional: if ranker.py was ONLY training (NOT your case)
+# ranking/ranker.py   ← DO NOT IGNORE (you NEED it)
+
+# Streamlit UI (separate container)
+streamlit/
+
+# Git / IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Docs
+README.md
+
+# Logs / temp
+*.log
