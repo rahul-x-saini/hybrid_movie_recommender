@@ -61,8 +61,7 @@ Compared across:
 
 ## Deployment
 
-- Dockerized application for portability
-- Deployed on GCP for scalable inference
+- Deployed as a fully containerized application using Docker, with the backend hosted on a GCP VM and the frontend deployed on Cloud Run.
 
 ---
 
