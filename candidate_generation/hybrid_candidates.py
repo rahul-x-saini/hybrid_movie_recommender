@@ -2,6 +2,9 @@ import pandas as pd
 import numpy as np
 from models.content_model import ContentRecommender
 from models.collab_model import MatrixFactorization
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 class HybridCandidateGenerator:
@@ -32,11 +35,13 @@ class HybridCandidateGenerator:
     # ---------- Load ----------
     def _load_content_model(self):
         import joblib
-        return joblib.load("models/content_model.pkl")
-
+        path = os.path.join(BASE_DIR, "models/content_model.pkl")
+        return joblib.load(path)
+        
     def _load_collab_model(self):
         import joblib
-        return joblib.load("models/collab_model.pkl")
+        path = os.path.join(BASE_DIR, "models/collab_model.pkl")
+        return joblib.load(path)
 
     # ---------------Content Based Recommendations-----------------
 
